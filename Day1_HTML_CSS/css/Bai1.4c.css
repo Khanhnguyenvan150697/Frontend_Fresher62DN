@@ -1,0 +1,175 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    margin: 0;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    padding: 0 100px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right bottom, #011e4a, #692b69, #be3962, #f06f3e, #eebb00);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loginform{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 50px;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.text{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 40px;
+}
+.form1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    width:450px;
+    height: 350px;
+}
+.form1 p{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.username input,
+.password input,
+.submit_reset input,
+.phone input,
+.email input{
+    margin: 10px 0;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 4px;
+    outline: none;
+    height: 30px;
+    width:370px;
+    background: transparent;
+}
+
+.username input::-webkit-input-placeholder,
+.password input::-webkit-input-placeholder,
+.phone input::-webkit-input-placeholder,
+.email input::-webkit-input-placeholder{
+    color: #fff;
+    padding-left: 10px;
+}
+.username input:hover,
+.password input:hover,
+.phone input:hover,
+.email input:hover{
+    border: 1px solid rgb(175, 175, 238);
+}
+
+.username, .password, .phone, .email{
+    position: relative;
+}
+.username i,
+.password i,
+.phone i,
+.email i{
+    position: absolute;
+    right: 10px;
+    bottom: 32%;
+    font-size: 20px;
+    color: #fff;
+}
+.submit_reset{
+    width: 372px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.submit_reset input{
+    width: 160px;
+    height: 40px;
+}
+.submit_reset input:nth-child(1){
+    background-color: green;
+    border: none;
+    color: #fff;
+}
+.submit_reset input:nth-child(2){
+    background-color: rgb(158, 0, 0);
+    border: none;
+    color: #fff;
+}
+.submit_reset input:nth-child(2):hover{
+    background-color: red;
+    transition: 100ms ease-in;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.submit_reset input:nth-child(1):hover{
+    background-color: rgb(1, 201, 1);
+    transition: 100ms ease-in;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.form2{
+    width: 450px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form2 p{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.registerbtn{
+    width: 370px;
+    height: 40px;
+    border-radius: 4px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: green;
+    border: none;
+    outline: none;
+}
+.registerbtn:hover{
+    background-color: rgb(0, 201, 184);
+    transition: 100ms ease-in;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+@media only screen and (max-width: 986px){
+    .wrapper{
+        width: 100%;
+        height: auto;
+    }
+    .loginform{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        flex-flow: wrap;
+    }
+    .form1, .form2{
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+    
+}

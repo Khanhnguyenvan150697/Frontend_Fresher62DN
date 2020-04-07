@@ -1,0 +1,75 @@
+*{
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+body{
+    margin: 0;
+}
+.template{
+    width: 100%;
+}
+.navbar{
+    background-color: seagreen;
+}
+.header{
+    background-color: sienna;
+}
+.f1{
+    background-color: skyblue;
+}
+.f2{
+    background-color: tan;
+}
+.f3{
+    background-color: tomato;
+}
+.signup{
+    background-color: violet;
+}
+.content{
+    background-color: wheat;
+}
+
+@media only screen and (min-width:1024px){
+    .template{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px 250px 300px 200px 400px;
+    }
+    .navbar, .header, .signup, .content{
+        grid-column: 1/4;
+    }
+}
+@media only screen and (max-width:1023px){
+    .template{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 100px 250px 300px 200px 200px;
+        
+    }
+    .navbar, .header, .content{
+        grid-column: 1/3;
+    }
+    .content{
+        grid-row: 3;
+    }
+    .signup{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .f3{
+        grid-column: 1;
+        grid-row: 5;
+    }
+}
+@media only screen and (max-width:720px){
+    .template{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 100px 250px 300px 300px 300px 300px 300px;
+    }
+    .signup, .f1, .f2, .f3{
+        grid-column: 1/3;
+    }
+}

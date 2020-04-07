@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    height: 100vh;
+}
+.divA, .divB, .divC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divA{
+    width: 100%;
+    height: 100px;
+    background-color: blueviolet;
+}
+.divBC{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+.divB{
+    background-color: brown;
+    flex: 1;
+    margin-right: 5px;
+}
+.divC{
+    background-color: rgb(22, 110, 0);
+    flex: 9;
+    margin-left: 5px;
+}
+
+@media only screen and (max-width: 1180px){
+    .divA{
+        height: 200px;
+    }
+    .divB{
+        flex: 3;
+    }
+    .divC{
+        flex: 7;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .divBC{
+        flex-direction: column-reverse;
+    }
+    .divB{
+        margin-right: 0;
+        margin-top: 5px;
+    }
+    .divC{
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .divBC{
+        flex-direction: column-reverse;
+    }
+    .divB{
+        margin-right: 0;
+        margin-top: 5px;
+    }
+    .divC{
+        margin-left: 0;
+        margin-bottom: 5px;
+        height: 150%;
+    }
+}

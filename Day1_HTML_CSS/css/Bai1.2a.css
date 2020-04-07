@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+.block1{
+    width: 1140px;
+    height: 340px;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: 75px;
+    padding-top: 40px;
+}
+.hello{
+    font-size: 63px;
+    font-weight: 300;
+}
+.introText{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.learnmoreBtn{
+    margin-top: 10px;
+}
+.learnmoreBtn button{
+    border: none;
+    border-radius: 7px;
+    background-color:#007bff;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;
+}
+.learnmoreBtn button:hover{
+    background-color:#0065d1;
+    transition: 300ms ease-in;
+}
+.learnmoreBtn button:active{
+    border: none;
+}
+.block2{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+.heading{
+    width: 300px;
+}
+.headingTitle{
+    font-size: 25px;
+    font-weight: 400;
+}
+.heading span{
+    font-size: 15px;
+}
+.viewDetailBtn{
+    margin-top: 20px;
+}
+.viewDetailBtn button{
+    border: none;
+    background-color: rgb(104, 104, 104);
+    color: #fff;
+    font-size: 13px;
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+}
+.viewDetailBtn button:hover{
+    background-color: rgb(139, 139, 139);
+    transition: 300ms ease-in;
+}

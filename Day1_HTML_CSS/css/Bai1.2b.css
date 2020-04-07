@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    background-color: rgb(243, 243, 243);
+}
+.news, .welcome, .agents{
+    width: 400px;
+    height: 50px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px dashed rgb(218, 218, 218);
+    position: relative;
+    padding-bottom: 10px;
+}
+.heading span{
+    font-size: 24px;
+    font-weight: 600;
+}
+.heading span:hover{
+    font-size: 26px;
+    transition: 100ms ease-in;
+}
+.heading a{
+    text-decoration: none;
+    font-size: 15px;
+    position: absolute;
+    bottom: 13px;
+    right: 5px;
+    color: rgb(0, 137, 161);
+}
+.heading a:hover{
+    color: rgb(8, 189, 78);
+    transition: 300ms ease-in;
+}
+.news, .agents{
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+    border-bottom: 2px dotted rgb(218, 218, 218);
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.content img{
+    width: 80px;
+    height: 80px;
+    border: 2px solid #cac7c7;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.content img:hover{
+    transform: rotate(10deg);
+    transition: 300ms ease-in;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    font-size: 12px;
+    color:  #a8a8a8;
+}
+.text .titletext{
+    font-weight: 500;
+    font-size: 15px;
+    color: black;
+}
+.text .date{
+    font-size: 13px;
+}
+.text span{
+    margin-bottom: 8px;
+}
+.text .contenttext a{
+    text-decoration: none;
+    color: rgb(31, 164, 187);
+}
+.text .contenttext a:hover{
+    text-decoration: none;
+    color: rgb(233, 229, 1);
+    font-weight: 600;
+}
+.text a{
+    text-decoration: none;
+    color: rgb(31, 164, 187);
+    margin-bottom: 7px;
+}
+.welcome{
+    display: flex;
+    flex-direction: column;
+}
+.welcome img{
+    display: block;
+    width: 100%;
+    border: 2px solid #cac7c7;
+    box-sizing: border-box;
+    padding: 5px;
+    margin-top: 30px;
+}
+.welcome img:hover{
+    opacity: 0.5;
+    transition: 300ms ease-in;
+}
+.welcome a{
+    position: relative;
+}
+
+.welcome .description{
+    margin-top: 20px;
+    font-size: 13px;
+    color: #a8a8a8;
+}
+.contactagents:hover{
+    text-decoration: none;
+    color: rgb(233, 229, 1);
+    font-weight: 600;
+}
