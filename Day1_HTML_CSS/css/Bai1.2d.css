@@ -1,0 +1,215 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper{
+    width: 100%;
+    background-color: rgb(173, 208, 216);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.wrapper .menu{
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    border-radius: 5px;
+}
+.wrapper .menu ul{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.wrapper .menu ul a{
+    text-decoration: none;
+    margin: 0 10px;
+}
+.wrapper .menu ul a li{
+    list-style: none;
+    color: #fff;
+}
+.wrapper .menu ul a:nth-child(1){
+    border-bottom: 1px solid #fff;
+}
+.wrapper .menu ul a li:hover{
+    color: rgb(228, 214, 18);
+}
+.wrapper .slide{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 60px 0;
+    margin-bottom: 70px;
+}
+.wrapper .slide div{
+    margin: 0 50px;
+}
+.wrapper .slide div:nth-child(1){
+    flex: 1;
+}
+.wrapper .slide div:nth-child(2){
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper .slide div img{
+    width: 100%;
+}
+.wrapper .slide div:nth-child(2) p:nth-child(1){
+    font-size: 80px;
+    color:rgb(2, 2, 119);
+    margin: 0;
+}
+.wrapper .slide div:nth-child(2) p:nth-child(1) span{
+    color:rgb(1, 1, 65);
+}
+.wrapper .slide div:nth-child(2) p:nth-child(2){
+    font-size: 30px;
+    color:rgb(2, 2, 119);
+    margin: 0;
+}
+.wrapper .slide div:nth-child(2) p:nth-child(3){
+    font-size: 30px;
+    color:rgb(2, 2, 119);
+    margin: 0;
+}
+.wrapper .hr{
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.007),rgb(156, 156, 156),rgba(121, 121, 121, 0));
+}
+.wrapper .block{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.wrapper .block .blockContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    padding-left: 5px;
+    padding-right: 18px;
+    border: 2px solid rgb(236, 236, 236);
+    
+}
+.wrapper .block .blockContent span:nth-child(1){
+    font-size: 25px;
+    color: #fff;
+    margin-top: 20px;
+}
+.wrapper .block .blockContent span:nth-child(2){
+    font-size: 12px;
+    color: rgb(126, 126, 126);
+    margin-top: 5px;
+}
+.wrapper .block .blockContent div img{
+    width: 100%;
+    border: 5px solid rgb(88, 169, 180);
+}
+.wrapper .block .blockContent div img:hover{
+    opacity: 0.5;
+    transition: 300ms;
+}
+.wrapper .block .blockContent p{
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+}
+.wrapper .block .blockContent button{
+    width: 100px;
+    height: 30px;
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 2px -4px rgba(197, 197, 197, 0.589);
+}
+.wrapper .block .blockContent button:hover{
+    background-color: orangered;
+    transition: 300ms;
+    cursor: pointer;
+}
+.wrapper .block .blockContent div{
+    margin: 10px 0;
+}
+.wrapper .footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}
+.wrapper .footer ul{
+    padding: 0;
+}
+.wrapper .footer ul a{
+    text-decoration: none;
+    color: rgb(99, 98, 98);
+}
+.wrapper .footer ul a li{
+    list-style: none;
+    margin: 5px 0;
+}
+.wrapper .footer ul a:nth-child(1){
+    font-weight: 600;
+    color: #fff;
+}
+.wrapper .footer ul a:nth-child(1) li{
+    margin-bottom: 30px;
+}
+.wrapper .footer ul a:nth-child(1) li:hover{
+    color: orangered;
+    transition: 300ms ease-in;
+}
+.wrapper .footer ul a:hover{
+    color: rgb(187, 190, 0);
+}
+.wrapper .hr2{
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.007),rgb(156, 156, 156),rgba(121, 121, 121, 0));
+    margin-top: 30px;
+}
+.copyright{
+    background-color: rgb(210, 237, 252);
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+.copyright div{
+    display: flex;
+    align-items: center;    
+    padding: 5px 0;
+    margin-left: 10px;
+    background-image: linear-gradient(180deg, rgb(210, 237, 252), rgb(227, 245, 255));
+}
+.copyright div span{
+    color: rgb(138, 138, 138);
+}
+.copyright div span ul{
+    display: flex;
+    margin: 0;
+}
+.copyright div span ul a{
+    text-decoration: none;
+    color: rgb(138, 138, 138);
+}
+.copyright div span ul li{
+    margin: 0 10px;
+    list-style: none;
+    display: flex;
+}
+.copyright div span ul li:hover{
+    color: rgb(187, 190, 0);
+}
+.copyright div span ul li::after{
+    content: "";
+    display: block;
+    width: 2px;
+    background-color: rgb(138, 138, 138);
+    margin-left: 26px;
+}

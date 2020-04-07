@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    position: relative;
+}
+table{
+    border: 3px solid rgb(153, 4, 4);
+    border-collapse: collapse;
+    position: absolute;
+    top: 28%;
+    left: 28%;
+}
+th, td{
+    border: 2px solid rgb(221, 107, 0);
+    border-collapse: collapse;
+}
+td{
+    padding-left: 10px;
+}

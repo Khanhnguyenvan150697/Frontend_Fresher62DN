@@ -1,0 +1,47 @@
+@media only screen and (max-width:1024px){
+    .services .text2{
+        font-size: 1.8rem;
+    }
+    .service-info, .city-price{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+    }
+    .service-block, .city-price-block{
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+}
+@media only screen and (max-width:768px){
+    .header{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+    }
+    .header .block{
+        width: 70%;
+    }
+    .citypricing .text2{
+        font-size: 1.2rem;
+    }
+    .services .text2{
+        font-size: 1.1rem;
+    }
+    .service-info, .city-price{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-flow: wrap;
+    }
+    .service-block, .city-price-block{
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+}
